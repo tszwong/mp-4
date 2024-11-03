@@ -8,6 +8,7 @@ const WEATHER_API_KEY = process.env.API_KEY;
 export async function GET(req: Request) {
     const { searchParams } = new URL(req.url);
     const city = searchParams.get("city");
+    console.log("API Key:", WEATHER_API_KEY);
 
     if (!city) {
         return NextResponse.json({ error: "City is required" }, { status: 400 });
