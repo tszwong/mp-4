@@ -26,8 +26,6 @@ const WeatherCardContainer = styled.div`
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    border: gray 4px solid;
-    border-radius: 5px;
 `;
 
 export default function CityPage() {
